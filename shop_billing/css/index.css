@@ -1,0 +1,17 @@
+Body {
+  background-color: palevioletred;
+  display: flex;
+  margin-top: 30px;
+}
+input{
+    border-radius: 30px;
+    height:50px;
+}
+button{
+    border-radius: 30px;
+    font: black;
+    font-size: larger;
+    background-color: aqua;
+    height: fit-content;
+    margin: 2px;
+}

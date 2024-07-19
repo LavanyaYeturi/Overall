@@ -1,0 +1,52 @@
+{
+  "services": [
+    {
+      "image": "Icons/ux-interface.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut",
+      "status": "Active",
+      "id": 1
+    },
+    {
+      "image": "Icons/gaming.png",
+      "service_name": "Game Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 2
+    },
+    {
+      "image": "Icons/design.png",
+      "service_name": "Graphic Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut",
+      "status": "Inactive",
+      "id": 3
+    },
+    {
+      "image": "Icons/web-design.png",
+      "service_name": "Web Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut",
+      "status": "Active",
+      "id": 4
+    },
+    {
+      "image": "Icons/mobile-development.png",
+      "service_name": "App Development",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 5
+    },
+    {
+      "image": "Icons/digital-marketing.png",
+      "service_name": "Digital Marketing",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut",
+      "status": "Active",
+      "id": 6
+    }
+  ]
+}

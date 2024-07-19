@@ -1,0 +1,52 @@
+{
+    "services":[
+        {
+            "id":1,
+            "image":"Icons/ux-interface.png",
+            "countImage":"Icons/01.png",
+            "service_name":"UX Design",
+            "designs":"mobile app ,web design",
+            "description":"Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut."
+        },
+        {
+            "id":2,
+            "image":"Icons/gaming.png",
+            "countImage":"Icons/02.png",
+            "service_name":"Game Design",
+            "designs":"mobile app ,web design",
+            "description":"Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut."
+        },
+        {
+            "id":3,
+            "image":"Icons/design.png",
+            "countImage":"Icons/03.png",
+            "service_name":"Graphic Design",
+            "designs":"mobile app ,web design",
+            "description":"Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut."
+        },
+        {
+            "id":4,
+            "image":"Icons/web-design.png",
+            "countImage":"Icons/04.png",
+            "service_name":"Web Design",
+            "designs":"mobile app ,web design",
+            "description":"Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut."
+        },
+        {   
+            "id":5,
+            "image":"Icons/mobile-development.png",
+            "countImage":"Icons/05.png",
+            "service_name":"App Development",
+            "designs":"mobile app ,web design",
+            "description":"Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut."
+        },
+        {   
+            "id":6,
+            "image":"Icons/digital-marketing.png",
+            "countImage":"Icons/06.png",
+            "service_name":"Digital Marketing",
+            "designs":"mobile app ,web design",
+            "description":"Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut."
+        }
+    ]
+}

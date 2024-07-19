@@ -1,0 +1,62 @@
+<html>
+<head><title>DISCOUNT</title></head>
+<body>
+   <script>
+   var productsCost;
+   var cost;
+   var sum;
+   
+   function ItemsCost()
+   {
+       var productsCost=[];
+        for( var i=1;i>=1;i++)
+        {
+             cost =(prompt(`*** please enter "end" if your products billing is done***
+                           please enter your products cost
+                            `));
+              
+                if(cost=="end")
+                {
+                 alert("THE COST OF YOUR PRODUCTS ARE:"+productsCost);
+                 break;
+                }
+                
+                
+                productsCost.push(cost);
+               }
+              var total=0;
+               for (var i in productsCost) 
+               {
+                      total += parseInt(productsCost[i]);
+              }
+              
+                alert("your total bill is "+total);
+          if(total>=2000 && productsCost.length>=5 )
+          {
+          
+           alert(`***congratulations you got 20% discount*** 
+                   your total bill to be paid is 
+                    ${total-((total)*20/100)} `); 
+           }    
+           else if(total>=2000 && productsCost.length>=1) 
+           {
+           alert(`***congratulations you got 10% discount*** 
+                   your total bill to be paid is 
+                    ${total-((total)*10/100)} `); 
+                    }
+                    else
+                    {
+                    alert(`your total bill is less than "2000" .so you dont get any discount`);
+                    }
+                    alert(`THANK YOU PLEASE VISIT AGAIN`);
+        }
+        
+        
+         
+         
+        
+         
+                ItemsCost();
+                </script>
+                </body>
+                </html>

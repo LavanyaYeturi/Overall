@@ -1,0 +1,114 @@
+
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+    
+}
+ body{
+   
+    width:100%;
+    /* height:1666px; */
+    
+    
+} 
+.homepage{
+    /* height:850px; */
+    width:100%;
+    background:#fff7f4;
+}
+nav{
+    padding:30px;
+    width:100%;
+    display:flex;
+    justify-content: center;
+}
+.logo{
+    position:absolute;
+    width:186px;
+    height:50px;
+    left:110px;
+}
+ul{
+    margin-left: 450px;
+}
+ li{  
+list-style-type: none;
+margin-left: 40px;
+float:left;
+height: 30px;
+font-style: normal;
+font-weight: 500px;
+font-size: 20px;
+margin-top:10px;
+}
+li :hover{
+    color: #FF5300;
+}
+.lets-talk{
+  position:relative;
+  top:-13px;
+  padding:12px 10px;
+   width: 112px; 
+   background:#fff7f4; 
+   font-size: 20px; 
+   border-radius:5px;   
+}
+.services{
+    /* width:1170px; */
+    width:100%;
+   
+}
+ .service-heading{ 
+    padding:2px;
+    text-align:center
+    
+ }
+ .title1{
+    width:199px;
+    height:24px;
+    color: #FF5300;
+ }
+ .info1{
+    width: 244px;
+    height: 59px;
+    line-height:100px; 
+    font-size:39.0625px; 
+ }
+ .service-container{
+   
+   
+  margin-left:-23%;
+  height:630px;
+  margin-top:50px;
+  padding-bottom:30px;
+  
+ }
+ .service-container ul li{
+width: 370px;
+height: 300px;
+background: #FFFFFF;
+box-shadow: 0px 1px 4px rgba(0, 0, 0, 0.1);
+border-radius: 10px;
+float:left;
+padding:20px;
+ }
+ .service-title{
+   
+    font-size:25px;
+    line-height:50px;
+    color:#373737;
+ }
+ .service-subtitle{
+    font-size:12.8px;
+    line-height:19px;
+    color:#7B7B7B;
+ }
+ .service-description{
+    font-size:16px;
+    line-height:24px;
+    color:#7B7B7B;
+ }
+ .countImage{
+    float:right;
+ }

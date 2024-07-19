@@ -1,0 +1,57 @@
+Login page :
+1. Email: //input[@name="email"]
+2. Password : //input[@name="password"]
+3. forgot password : (//a[text()])[1]
+4. login button : //button[@type="submit"]//descendant::span
+5. sign up : //a[text()="Sign Up"]
+6. logo : //img[@class="main-logo"]
+
+side bar bookings list:
+san , las 
+1. flights:  //a[@title="Flights"]
+2. Hotels :  //a[@title="Hotels"]
+3. Cars : //a[@title="Cars"]
+4.Trips : //a[@title="Trips"]                     
+
+
+//span[text()="Round Trip"]
+   
+(//input[@placeholder="Origin"])[1]
+(//input[@placeholder="Destination"])[1]
+(//input[@placeholder="Date"])[1]
+(//input[@placeholder="Date"])[2]
+dropdown 1 : (//i[@class="fa fa-caret-down text-Violet"])[1]
+dropdown 2 :(//span[@class="ng-arrow-wrapper"])[1]
+(//span[text()="Business"])[1]
+
+
+
+
+//span[text()="One Way"]
+(//input[@placeholder="Origin"])[1]
+(//input[@placeholder="Destination"])[1]
+(//input[@placeholder="Date"])[1]
+dropdown 1 : (//i[@class="fa fa-caret-down text-Violet"])[1]
+dropdown 2 :(//span[@class="ng-arrow-wrapper"])[1]
+(//span[@class="ng-arrow"])[2]
+
+
+//span[text()="Multi City"]
+
+(//input[@placeholder="Origin"])[1]
+(//input[@placeholder="Destination"])[1]
+(//input[@placeholder="Date"])[1]
+(//span[@class="ng-arrow"])[1]
+(//span[@class="ng-arrow"])[2]
+(//span[@class="ng-arrow"])[2]
+
+{
+    { roundtrip:xpath,
+       FlightDetails:{
+                    Origin:"",
+                    Destination:"",
+                    DepartDate:"",
+                     ,
+
+                     }
+}

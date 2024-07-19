@@ -1,0 +1,650 @@
+{
+  "menuList": [
+    {
+      "itemName": "veg biryani",
+      "price": 100,
+      "id": 1
+    },
+    {
+      "itemName": "egg biryani",
+      "price": 150,
+      "id": 2
+    },
+    {
+      "itemName": "chicken biryani",
+      "price": 200,
+      "id": 3
+    },
+    {
+      "itemName": "veg fried rice",
+      "price": 80,
+      "id": 4
+    },
+    {
+      "itemName": "egg fried rice",
+      "price": 120,
+      "id": 5
+    },
+    {
+      "itemName": "chicken fried rice",
+      "price": 150,
+      "id": 6
+    },
+    {
+      "itemName": "meals",
+      "price": 150,
+      "id": 7
+    },
+    {
+      "itemName": "chicken noodles",
+      "price": 100,
+      "id": 8
+    },
+    {
+      "itemName": "egg noodles",
+      "price": 70,
+      "id": 9
+    },
+    {
+      "itemName": "veg noodles",
+      "price": 50,
+      "id": 10
+    }
+  ],
+  "cart": [],
+  "orders": [
+    {
+      "status": "cancled",
+      "name": "akhil",
+      "bill": 346.5,
+      "tax": 10.5,
+      "discount": 14,
+      "Userorders": [
+        {
+          "item": "egg biryani",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        }
+      ],
+      "id": 1
+    },
+    {
+      "status": "cancled",
+      "name": "joon",
+      "bill": 1316.7,
+      "tax": 39.9,
+      "discount": 53.2,
+      "Userorders": [
+        {
+          "item": "egg biryani",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "item": "egg noodles",
+          "price": 70,
+          "quantity": 1
+        },
+        {
+          "item": "chicken fried rice",
+          "price": 150,
+          "quantity": 1
+        }
+      ],
+      "id": 3
+    },
+    {
+      "status": "cancled",
+      "name": "boobbb",
+      "bill": 1316.7,
+      "tax": 39.9,
+      "discount": 53.2,
+      "Userorders": [
+        {
+          "item": "chicken fried rice",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "egg noodles",
+          "price": 70,
+          "quantity": 1
+        },
+        {
+          "item": "chicken noodles",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "item": "meals",
+          "price": 150,
+          "quantity": 1
+        }
+      ],
+      "id": 4
+    },
+    {
+      "status": "cancled",
+      "name": "akhil",
+      "bill": 99,
+      "tax": 3,
+      "discount": 4,
+      "Userorders": [
+        {
+          "item": "egg biryani",
+          "price": 150,
+          "quantity": 1
+        }
+      ],
+      "id": 5
+    },
+    {
+      "status": "cancled",
+      "name": "akhil",
+      "bill": 0,
+      "tax": 0,
+      "discount": 0,
+      "Userorders": [],
+      "id": 6
+    },
+    {
+      "status": "cancled",
+      "name": "joon",
+      "bill": 445.5,
+      "tax": 13.5,
+      "discount": 18,
+      "Userorders": [
+        {
+          "item": "egg biryani",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "item": "egg noodles",
+          "price": 70,
+          "quantity": 1
+        }
+      ],
+      "id": 7
+    },
+    {
+      "status": "cancled",
+      "name": "joon",
+      "bill": 247.5,
+      "tax": 7.5,
+      "discount": 10,
+      "Userorders": [
+        {
+          "item": "egg biryani",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        }
+      ],
+      "id": 8
+    },
+    {
+      "status": "cancled",
+      "name": "naidu",
+      "bill": 2752.2000000000003,
+      "tax": 83.39999999999999,
+      "discount": 111.2,
+      "Userorders": [
+        {
+          "item": "egg biryani",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "item": "chicken noodles",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "item": "egg noodles",
+          "price": 70,
+          "quantity": 1
+        },
+        {
+          "item": "veg fried rice",
+          "price": 80,
+          "quantity": 1
+        },
+        {
+          "item": "meals",
+          "price": 150,
+          "quantity": 1
+        }
+      ],
+      "id": 9
+    },
+    {
+      "status": "cancled",
+      "name": "seetam",
+      "bill": 1316.7,
+      "tax": 39.9,
+      "discount": 53.2,
+      "Userorders": [
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "item": "chicken noodles",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "item": "egg noodles",
+          "price": 70,
+          "quantity": 1
+        },
+        {
+          "item": "chicken fried rice",
+          "price": 150,
+          "quantity": 1
+        }
+      ],
+      "id": 10
+    },
+    {
+      "status": "cancled",
+      "name": "ramesh",
+      "bill": 1960.2,
+      "tax": 59.4,
+      "discount": 79.2,
+      "Userorders": [
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "item": "chicken noodles",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "item": "egg noodles",
+          "price": 70,
+          "quantity": 1
+        },
+        {
+          "item": "chicken fried rice",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "chicken biryani",
+          "price": 200,
+          "quantity": 1
+        }
+      ],
+      "id": 11
+    },
+    {
+      "status": "cancled",
+      "name": "satya",
+      "bill": 2752.2000000000003,
+      "tax": 83.39999999999999,
+      "discount": 111.2,
+      "Userorders": [
+        {
+          "item": "chicken fried rice",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "egg noodles",
+          "price": 70,
+          "quantity": 1
+        },
+        {
+          "item": "chicken noodles",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "item": "veg fried rice",
+          "price": 80,
+          "quantity": 1
+        },
+        {
+          "item": "meals",
+          "price": 150,
+          "quantity": 1
+        }
+      ],
+      "id": 12
+    },
+    {
+      "status": "cancled",
+      "name": "bhargav",
+      "bill": 4732.2,
+      "tax": 143.4,
+      "discount": 191.20000000000002,
+      "Userorders": [
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "item": "chicken noodles",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "item": "egg noodles",
+          "price": 70,
+          "quantity": 1
+        },
+        {
+          "item": "chicken fried rice",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "chicken biryani",
+          "price": 200,
+          "quantity": 1
+        },
+        {
+          "item": "egg biryani",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "veg fried rice",
+          "price": 80,
+          "quantity": 1
+        },
+        {
+          "item": "meals",
+          "price": 150,
+          "quantity": 1
+        }
+      ],
+      "id": 13
+    },
+    {
+      "status": "cancled",
+      "name": "naidu",
+      "bill": 643.5,
+      "tax": 19.5,
+      "discount": 26,
+      "Userorders": [
+        {
+          "item": "egg biryani",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "item": "chicken noodles",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "item": "egg noodles",
+          "price": 70,
+          "quantity": 1
+        },
+        {
+          "item": "veg fried rice",
+          "price": 80,
+          "quantity": 1
+        }
+      ],
+      "id": 14
+    },
+    {
+      "status": "orderd",
+      "name": "akhil",
+      "bill": 0,
+      "tax": 0,
+      "discount": 0,
+      "Userorders": [],
+      "id": 15
+    },
+    {
+      "status": "orderd",
+      "name": "ramesh",
+      "bill": 524.6999999999999,
+      "tax": 15.899999999999999,
+      "discount": 21.2,
+      "Userorders": [
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "item": "chicken noodles",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "item": "egg noodles",
+          "price": 70,
+          "quantity": 1
+        },
+        {
+          "item": "chicken fried rice",
+          "price": 150,
+          "quantity": 1
+        }
+      ],
+      "id": 16
+    },
+    {
+      "status": "orderd",
+      "name": "joon",
+      "bill": 99,
+      "tax": 3,
+      "discount": 4,
+      "Userorders": [
+        {
+          "item": "egg biryani",
+          "price": 150,
+          "quantity": 1
+        }
+      ],
+      "id": 17
+    },
+    {
+      "status": "orderd",
+      "name": "seetam",
+      "bill": 445.5,
+      "tax": 13.5,
+      "discount": 18,
+      "Userorders": [
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "item": "chicken noodles",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "item": "egg noodles",
+          "price": 70,
+          "quantity": 1
+        }
+      ],
+      "id": 18
+    },
+    {
+      "status": "orderd",
+      "name": "satya",
+      "bill": 643.5,
+      "tax": 19.5,
+      "discount": 26,
+      "Userorders": [
+        {
+          "item": "chicken fried rice",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "egg noodles",
+          "price": 70,
+          "quantity": 1
+        },
+        {
+          "item": "chicken noodles",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "item": "veg fried rice",
+          "price": 80,
+          "quantity": 1
+        }
+      ],
+      "id": 19
+    },
+    {
+      "status": "orderd",
+      "name": "bhargav",
+      "bill": 940.5,
+      "tax": 28.5,
+      "discount": 38,
+      "Userorders": [
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "item": "chicken noodles",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "item": "egg noodles",
+          "price": 70,
+          "quantity": 1
+        },
+        {
+          "item": "chicken fried rice",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "chicken biryani",
+          "price": 200,
+          "quantity": 1
+        },
+        {
+          "item": "egg biryani",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "veg fried rice",
+          "price": 80,
+          "quantity": 1
+        }
+      ],
+      "id": 20
+    },
+    {
+      "status": "orderd",
+      "name": "naidu",
+      "bill": 524.6999999999999,
+      "tax": 15.899999999999999,
+      "discount": 21.2,
+      "Userorders": [
+        {
+          "item": "egg biryani",
+          "price": 150,
+          "quantity": 1
+        },
+        {
+          "item": "egg fried rice",
+          "price": 120,
+          "quantity": 1
+        },
+        {
+          "item": "chicken noodles",
+          "price": 100,
+          "quantity": 1
+        },
+        {
+          "item": "egg noodles",
+          "price": 70,
+          "quantity": 1
+        }
+      ],
+      "id": 21
+    },
+    {
+      "status": "orderd",
+      "name": "lavanya srinivas yeturi",
+      "bill": 7177.5,
+      "tax": 217.5,
+      "discount": 290,
+      "Userorders": [
+        {
+          "item": "veg biryani",
+          "price": 2400,
+          "quantity": "4"
+        },
+        {
+          "item": "egg biryani",
+          "price": 900,
+          "quantity": "3"
+        },
+        {
+          "item": "chicken biryani",
+          "price": 0,
+          "quantity": "22"
+        }
+      ],
+      "id": 22
+    }
+  ]
+}

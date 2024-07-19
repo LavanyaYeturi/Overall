@@ -1,0 +1,8 @@
+Appium Webdriver.io setup
+
+===> install npm 
+===> install node 
+===> install java JDK 
+           > set JAVA_HOME path (verify java --version , echo $JAVA_HOME)
+===> 
+

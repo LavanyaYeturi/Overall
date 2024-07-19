@@ -1,0 +1,120 @@
+<html>
+<head><title>LOGIN</title>
+<link rel="stylesheet" href="page1.css">
+</head>
+<body>
+    <style>
+        table,th,tbody{
+    margin-top:33%;
+    height:10%;
+    padding:17px;
+    width:48%;
+    background-color:pink;
+    border:1px solid red;
+    border-collapse:collapse;
+    color:white;
+    font-weight:bold;
+    font-size:24px;
+    margin-left:20%;
+    }
+     .transactionSec {
+       margin-left:200px;
+       margin-top:-300px;
+       } 
+       .validationBox{
+         margin-left:35%;
+         height:5%;
+         width:20%;
+         background-color:white;
+         border:1% solid black;
+         box-sizing: border-box;
+         }
+</style>
+<button type="submit"  class="loginBtn" onclick="loginFunction()">login</button>
+        <div class="validationBox" style="display:none">
+          <span>invalid user name or password</span>
+          <button class="validationClose">x</button>
+                   </div>
+  <div class="login1">
+           <label>ENTER YOUR DETAILS</label><br>
+         <div class="acc">
+       <input type ="text"  id="inputAccountNumber" placeholder = "Enter Your Account Number" required>
+          </div><br>
+             
+       <div class="pwd">
+            <input type="password"  id="inputPassword"  placeholder="enter your password" required>
+           </div>
+       
+       <div class="sub">
+          <button type="submit" class="submit">submit</button><br>
+         </div>
+          <span class="frgpsd">Forgot password?</span>    
+   </div>
+             
+
+     <div class="page2">
+     <div class="one">
+       <div class="logout">
+               <button>LOGOUT</button></div>
+                   <div class="title">
+                        <h1>ATM</h1>
+                  </div>
+                 <div class="accName">
+                           <h3>welcome</h3>
+                           <h3>ACCOUNT HOLDER NAME</h3>
+                           <h2 class="accountHolderName">ACCOUNT HOLDER NAME</h2>
+                  </div>
+              <div class="balance">
+                         <h3>ACCOUNT HOLDER BALANCE</h3>
+                          
+                          <h2 class="currentBalance">0</h2>
+                  </div>
+             </div>
+          <div class = "container">
+         
+              <div class="frst">
+                     <button class="deposit">deposit</button>
+                     </div>  
+             <div class="secnd">
+                     <button class="withdrawl" >withdrawl</button>
+                     </div>
+             <div class="third">
+                     <button class="transaction">transaction</button>
+               </div> 
+         </div>
+    </div>  
+                 <div style="display:none" class="depositSec">
+                     <button class="close">back</button>
+		             <h1 style="color:white">ENTER AMOUNT</h1>
+		             <input  class="depositType"><br>
+		             <button class="depositClose"> submit your DEPOSIT</button>
+		            </div> 
+                    
+                     <div style="display:none" class="withdrawlSec">
+                      <button class="close1">back</button>
+				     <h1 style="color:white">ENTER AMOUNT</h1>
+				     <input class="withdrawType"><br>
+				     <button class="withdrawClose" > submit your WITHDRAW</button>
+			         </div>
+                      
+                  <div style="display:none" class="transactionSec">
+                  <button class="withdrawHistory" onclick="transactionFun('withdraws')">withdrawlHistory</button>
+                  <button class="depositHistory" onclick="transactionFun('deposits')">Deposit History</button>
+                       <table>
+                          <thead>
+                              <tr>
+		                   <th>s.no</th>
+		                   <th>Transaction Type</th>
+		                   <th>Amount</th>
+		                   <th>Balance</th>
+                              </tr>
+                           </thead>
+                           <tbody class="tbody">
+                           </tbody>
+                         </table>
+                     <button type="submit" class="transactionClose">close</button>
+                           </div>
+                    
+	<script src="page1.js"></script>
+	</body>
+	</html>

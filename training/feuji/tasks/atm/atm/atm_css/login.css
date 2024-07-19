@@ -1,0 +1,72 @@
+body{
+background-color:royalblue;
+display: flex;
+justify-content: center;
+margin-top:300px
+
+}
+.container{
+border-radius: 25px;
+align-content: space-around;
+height:500px;
+width: 500px;
+background-color: floralwhite;
+padding-top: 100px;
+
+}
+.acc{
+
+padding:2%;
+text-align-last: center;
+cursor: pointer;
+width:500px;
+
+
+
+display: inline-block;
+box-sizing: border-box;
+}
+input{
+
+width:350px;
+height:50px;
+}
+.pwd{
+cursor: pointer;
+width:500px;
+padding:2%;
+display: inline-block;
+box-sizing: border-box;
+text-align-last: center;
+}
+
+
+button:hover {
+opacity:0.5;
+}
+
+
+button{
+background-color:hotpink;
+padding:3%;
+color:aliceblue;
+margin-left:15%;
+margin-top:2%  ; 
+border: none;
+cursor: pointer;
+width:70%;
+font-size:30px;
+}
+
+
+a{
+text-decoration:none;
+
+}
+
+
+.frgpsd {
+text-align-last: right;
+font-size: 20;
+
+}

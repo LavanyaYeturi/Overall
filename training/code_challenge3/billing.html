@@ -1,0 +1,90 @@
+<html>
+
+<head>
+    <title>billing task</title>
+    <link rel="stylesheet" href="billing.css">
+</head>
+
+<body>
+    <div class="container">
+        <header>
+            <button class="orders">orders<span class="ordersCount">0</span></button>
+            <div class="current">current</div>
+        </header>
+        <div class="main_container">
+            <div class="left-panel">
+                <ul class="items-list">
+
+                </ul>
+            </div>
+            <div class="right-panel">
+                <div class="right-div">
+                    <div class="top">
+                        <h1 class="left">Table 5|Max</h1>
+                        <button class="clear-btn" onclick="clear()">Clear</button>
+                    </div>
+                    <input type="text" placeholder="please enter your name" class="customer_name">
+                    <table>
+                        <thead>
+                            <td>item</td>
+                            <td>Quantity</td>
+                            <td>price</td>
+                        </thead>
+                        <tbody class="cartItems">
+
+                        </tbody>
+                        <div class="tfoot">
+                            <tr class="discountBar">
+                                <td>discount</td>
+                                <td>3%</td>
+                                <td class="discountAmount">0</td>
+                            </tr>
+                            <tr class="taxBar">
+                                <td>tax</td>
+                                <td>4%</td>
+                                <td class="taxAmount">0</td>
+                            </tr>
+                        </div>
+
+                    </table>
+                    <div class="submit">
+                        <button class="placeOrder">place order</button>
+                        <div class="total">0</div>
+
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <table class="userOrders">
+            <thead>
+                <th>S.No</th>
+                <th>User Id</th>
+                <th> User Name</th>
+                <th>Total Bill</th>
+                <th>Time</th>
+            </thead>
+            <tbody class="ordersList">
+
+            </tbody>
+        </table>
+
+        <table class="viewOrders">
+            <thead>
+                <th>S.No</th>
+                <th>item</th>
+                <th> price</th>
+                <th>quantity</th>
+
+            </thead>
+            <tbody class="viewList">
+
+            </tbody>
+        </table>
+
+
+    </div>
+    <script src="billing.js"></script>
+</body>
+
+</html>

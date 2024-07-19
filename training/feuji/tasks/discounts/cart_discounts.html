@@ -1,0 +1,75 @@
+<html>
+         <head><title>OBJECTS CART DISCOUNT</title></head>
+               </head>
+         <body>
+                 <script>
+                         var cartArray=[];
+                         var productsCost;
+                         var cost;
+                         var total;
+                         var items=[
+				       {productName:"Notebooks",price:"300"},
+				       {productName:"Pens",price:"100"},
+				       {productName:"Charts",price:"200"},
+				       {productName:"Highliters",price:"400"},
+				       {productName:"Glitters",price:"300"},
+				       {productName:"TextBook",price:"500"},
+				       {productName:"Flank",price:"600"},
+				       {productName:"Pouch",price:"500"},
+				       {productName:"ClayBox",price:"300"},
+				       {productName:"GeometryBox",price:"200"}
+				  ];
+				     var  availableItems='';
+                      for(var i=0;i<items.length;i++)
+				{
+			           availableItems+=(`${i+1} :     ${items[i].productName} -  ${`$ `+ items[i].price} \n\n`);  
+		                }
+				    alert(availableItems);
+		                    for(var i=0;i<items.length;i++)
+				         {
+				             var cart=prompt(`****please enter end if your shopping is completed****
+                                                                  please enter your  item number  to buy`);
+                         if(cart=="end")
+                             {
+
+				     break;
+		             }  
+				     cartArray.push(items[cart-1]);
+
+				      total=total+parseInt(cart[i].price);
+							    }
+			
+							    
+	           var selectedItems='';
+                           for(let i=0;i<cart.length;i++) 
+                           {
+                                selectedItems +=(`${i+1} :      ${cart[i].productName}  -  ${cart[i].price} \n\n`);
+
+                           }
+  alert(`Your Items : \n\n`+selectedItems);  
+
+      alert("your total spents: " +  total);
+           if(total>=100000 && cart.length>=5)  
+             {
+               alert("you get a 20% discount");
+               var dis=(total)*20/100;
+               alert("you save : " + dis);
+               alert("you have to pay : " + (total-dis));
+             }
+
+          else if(total>=100000 && cart.length>=1)
+           {
+              alert("you get a 10% discount");
+               var dis=(total)*10/100;
+              alert(" save : " + dis);
+              alert("you have to pay : " + (total-dis));
+           }
+
+   else {
+    alert("no discount");
+    alert("you have to pay : " + total);
+    }
+             </script>
+        </body>
+  </html>
+   

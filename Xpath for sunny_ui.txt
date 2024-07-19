@@ -1,0 +1,13 @@
+//p[text()="Available to earn"]//preceding-sibling::*     // available amount 
+//div[@class="space-exit"]//h3                // 0$
+//div[@class="space-exit"]//h4             // 100$
+//label[@class="completed-label"]/following-sibling::h4     // completed $0
+//label[@class="completed-label1"]/following-sibling::h4    // available $500
+//h2[text()="Actions for you"]                      // actions for you label
+(// div[@class="main-wrap "])[1]                // first block 
+(// div[@class="main-wrap "])[1]//h4            // first block amount
+(// div[@class="main-wrap "])[1]//h4            // first block title
+(// div[@class="main-wrap "])[1]//h1           // first block description
+//button[text()="Read more"]          // read more button
+//button[text()="Read less"]       // read less btn
+

@@ -1,0 +1,132 @@
+
+   body{
+   background-color:#427c7d;
+   display: flex;
+   margin-top:30px;
+   
+   
+  
+}
+     .title{
+          
+            margin-left:50px;
+            
+           
+           }   
+        h1{
+           font-size:60px;
+            font-weight:bold;
+            color:#edf5ee;
+        }   
+        
+        h2{
+        
+        font-size:40px;
+            font-weight:bold;
+            color:#a79bcf;
+        }
+        h3{
+          font-size:30px;
+            font-weight:bold;
+            color:#edebf2;
+        
+        }
+        .accName{
+        
+           margin-left:50px;
+             }
+             
+             .balance{
+              margin-left:50px;
+              }
+              .savings{
+                 
+              margin-left:50px;
+              }
+.container{
+   float:right;
+   margin-top:-500px;
+   margin-left:500px;
+  
+   align-content: space-around;
+   height:800px;
+   width: 800px;
+   
+   padding-top: 100px;
+   }
+   
+   button
+   {
+  
+   box-sizing:border-box;
+   height:50px;
+   color:aliceblue;
+   background-color:#eb7cda;
+   padding: 12px 20px;
+   margin: 8px 20px;
+  
+   cursor: pointer;
+   width: 80%;
+    }
+    
+    .frst{
+    display:flex;
+    margin:2px;
+    }
+    
+    .secnd{
+    display:flex;
+    margin:2px;
+    }
+   
+   .third{
+    display:flex;
+    margin:2px;
+    }
+   div.b1>button{
+   
+      height:60px;
+      color:aliceblue;
+      background-color:#eb7cda;
+      padding: 15px 25px;
+      margin: 10px 40px;
+      box-sizing:border-box;
+      cursor: pointer;
+      width: 90%;
+   
+   }
+   button:hover {
+opacity:0.5;
+}
+   
+
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+   
+

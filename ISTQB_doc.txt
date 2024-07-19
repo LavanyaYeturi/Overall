@@ -1,0 +1,33 @@
+Testing Principle - Testing is context dependent
+Testing is done differently in different contexts. For example, safety-critical software is
+tested differently from an e-commerce site
+
+testing - A process to identify and access an application's functionality, performance, and overall quality, defects deduction,
+
+why testing? - for quality assurance, security,user satisfaction, performance optimization,cost reduction.
+
+error - mistakes in code 
+defect - identified by the developer in development environment.
+
+bug - identified  by the tester in testing environment.
+
+failure - identified by the enduser in live environment.
+
+severity - the impact/seriousness of the defect identified during testing
+   It helps prioritize the resolution of defects by categorizing them based on their potential impact on the software's functionality.
+1. low severity(MINOR) - less priority
+2.Medium severity(Moderate) -moderate priority
+3.High severity (Major) - High priority 
+4. Critical Severity (Severe)-Critical priority
+
+STLC - part of sdlc.
+Phases-
+     1. requirement analysis
+     2. 
+
+smoke testing - testing the highlevel functionality making sure that the application is ready for testing.
+
+regression testing - making sure that the new functionality should not impact on the entire functionality.
+
+re-testing - after fixing the logged defect and testing that particular logged functionality.
+

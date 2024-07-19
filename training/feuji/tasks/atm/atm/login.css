@@ -1,0 +1,76 @@
+body{
+background-color:royalblue;
+display: flex;
+justify-content: center;
+margin-top:300px
+
+}
+.container{
+border-radius: 25px;
+align-content: space-around;
+height:500px;
+width: 500px;
+background-color: floralwhite;
+padding-top: 100px;
+
+}
+.acc{
+
+
+text-align-last: center;
+cursor: pointer;
+width:500px;
+padding: 20px 30px 15px;
+margin: 15px 10;
+display: inline-block;
+box-sizing: border-box;
+}
+input{
+border-radius: 30px;
+width:300px;
+height:40px
+}
+.pwd{
+
+
+cursor: pointer;
+width:500px;
+padding: 10px 20px 10px;
+margin: 15px 10;
+display: inline-block;
+box-sizing: border-box;
+text-align-last: center;
+}
+.button{
+background-color:hotpink;
+text-align-last: center;
+color:aliceblue;
+padding: 12px 20px;
+margin: 8px 30px;
+border: none;
+cursor: pointer;
+width: 80%;
+}
+button:hover {
+opacity:0.5;
+}
+button{
+background-color:hotpink;
+
+color:aliceblue;
+
+margin: 8px 30px;
+border: none;
+cursor: pointer;
+width: %;
+font-size:30px
+}
+a{
+text-decoration:none;
+
+}
+.frgpsd {
+text-align-last: right;
+font-size: 20;
+padding: 10px 16px;
+}
