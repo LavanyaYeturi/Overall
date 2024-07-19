@@ -1,0 +1,47 @@
+installation :
+If you use the Chocolatey package manager you can install : choco install k6
+If you use the Windows Package Manager : winget install k6 --source winget or else can download from latest official installer link.(an .msi folder will be downloaded).
+now go to cmd prompt and run "k6" to check whether installed or not .
+
+run command 
+ k6 run script.js (file path)
+
+
+ setup 
+ step 1 : npm init
+ step 2 : create a folder (spec) and create (.js) files in it.
+ Step 3 : import http from 'k6/http';
+import { check, sleep } from 'k6'; 
+
+step 4 : you can give options in your script i.e,
+export const options = {
+  vus: 10,  // no.of virtual users
+  duration: '30s',  // time of execution 
+};
+or else you can givr no.of virtual users and time duration through command line also 
+i.e, k6 run --vus 10 --duration 30s script.js(file path).
+
+
+iterations cases :
+case 1 : Shared VUs iterations
+no.of vu =10
+no.of iterations = 200
+Each VU will get 200/10 = 20 or >20 or <20 iterations. 
+In this no.of iterations are not divided equally.
+  
+case 2 : per VUs iterations
+In this no.of iterations among the VUs will be equally divided.
+no.of vu =10
+no.of iterations = 200
+Each VU will get 200/10 = 20 iterations
+export const options = {
+scenarios: {
+        my_scenario: {
+            executor: 'shared-iterations', // type of iterations, 
+            // The executor field should be part of a scenario configuration within the scenarios field, not directly within the options object.
+            vus: 10,
+            iterations: 200, 
+            maxDuration: '30s',
+        },
+    },
+}

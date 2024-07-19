@@ -1,0 +1,11 @@
+{
+  "name": "k6-api",
+  "version": "1.0.0",
+  "description": "k6 API practice setup",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Lavanya Yeturi",
+  "license": "ISC"
+}

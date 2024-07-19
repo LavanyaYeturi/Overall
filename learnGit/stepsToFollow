@@ -1,0 +1,19 @@
+open github  ->
+create git account ->
+sign in ->
+click on "new" ->
+give "repo" name  ex:learning_git ->
+give "description" ex: This is new repo ->
+select public/private ->
+
+
+
+
+  cmd commands :
+_________________
+windows
+
+*   mkdir<foldername> // for creating new folder/directory
+*   dir  // to see list of files/folder present in that directory
+*   now run 'echo "# Learning_git" >> README.md'  // Learning_git is the repo name
+*  
