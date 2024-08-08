@@ -1,0 +1,724 @@
+cypress enables you to write all types of tests.
+ 
+end 2 end tests
+integration tests
+unit tests.
+ 
+*cypress is a automation open source tool. Its does not use selenium in backend many tools use selenium.
+*npm init -y (create package.json)
+npm install cypress (install latest version of cypress).
+npm install -D cypress-xpath (installation for xpaths).
+npx cypress open (project structure) like e2e fixtures support.
+ 
+*end 2 end tests - End-to-end testing is a type of testing that verifies the entire software application from start to finish, including all the systems, components, and integrations involved in the application's workflow. It aims to ensure that the application functions correctly and meets the user requirements.
+ 
+*component tests - tests only one component like email verification, logo,button etc...
+ 
+* /// <reference types="Cypress" /> -  It helps code completion from the cypress libraries. cypress/support/command.js
+* /// <reference types="Cypress-xpath" />  cypress/support/command.js
+*cy is a cypress command which has all cypress methods.(ex: cy.visit)
+ 
+cy.visit means navigation.
+cy.get means get the locator (ex: cy.get("input[name='username']").type("Admin");)
+cy.type means fill the input fields. (ex: cy.get("button[type='submit']").click();)
+cy.get(locator).should('be.visible');
+cy.get(locator).should('exist);
+cy.get(locator).should(
+ 
+describe('My First Test', () => {
+  it('Does not do much!', () => {
+    expect(true).to.equal(false)
+  })
+})
+ 
+.check()    Check checkbox or radio elements.
+.clear()    Clear the value of an input or textarea.
+.click()    Click a DOM element.
+.dblclick()    Double-click a DOM element.
+.rightclick()    Right click a DOM element.
+.scrollIntoView() Scroll an element into view.
+.scrollTo()    Scroll to a specific position.
+.select()    Select an <option> within a <select>.
+.selectFile()    Selects a file in an HTML5 input element, or simulates dragging a file into the browser.
+.trigger()    Trigger an event on a DOM element.
+.type()            Type into a DOM element.
+.uncheck()    Uncheck checkbox(es).
+ 
+cy.get('h1').should('contain', 'jane.lane')
+ 
+*cypress run command - npx cypress run --spec cypress\e2e\spec.cy.js --headed
+*cypress mochaa report command :- npm i --save-dev cypress-mochawesome-reporter
+*kept reports in config file after installation.
+ 
+module.exports = defineConfig({
+  reporter:"cypress-mochawesome-reporter",
+  e2e: {
+    setupNodeEvents(on, config) {
+      this.screenshotOnRunFailure=true;
+ 
+      require('cypress-mochawesome-reporter/plugin')(on);
+      // implement node event listeners here
+    },
+  },
+});
+ 
+import 'cypress-mochawesome-reporter/register' (support/e2e.js)
+
+playwright
+
+
+screenshot: 'only-on-failure'
+
+use: {
+    baseURL: process.env.BASE_URL,
+    headless: process.env.HEADLESS == 'headless',
+    viewport: {
+      width: +process.env.VIEWPORT_WIDTH || 1280,
+      height: +process.env.VIEWPORT_HEIGHT || 720,
+    },
+    testIdAttribute: 'data-qa',
+    ignoreHTTPSErrors: true,
+    screenshot: 'only-on-failure',
+    /* Maximum time each action such as `click()` can take. Defaults to 0 (no limit). */
+    actionTimeout: 0,
+ 
+    /* Base URL to use in actions like `await page.goto('/')`. */
+    // baseURL: 'http://localhost:3000',
+ 
+    /* Collect trace when retrying the failed test. See https://playwright.dev/docs/trace-viewer */
+    trace: 'on-first-retry',
+  },
+ 
+Trace viewer | Playwright
+Playwright Trace Viewer is a GUI tool that helps you explore recorded Playwright traces after the script has ran. You can open traces locally or in your browser on trace.playwright.dev.
+
+JS date methods
+ 
+https://www.freecodecamp.org/news/how-to-format-dates-in-javascript/
+How to Format Dates in JavaScript with One Line of Code
+For a long time, I've used libraries like Date-fns whenever I need to format dates in JavaScript. But it gets really weird whenever I do this in small projects that require simple date formats whic...
+
+browser.
+clearValue
+(selector);
+// Clears the input field
+browser.
+setValue
+(selector, valueToFill);
+// Fills the input field with a new value
+
+Jenkins :
+jenkins : 
+username : Lavanya
+password: Samanya@29
+full_name: lavanya_yeturi
+
+[06-02-2023 20:14] Lavanya Yeturi
+const URL = 'http://localhost:3000/details';
+
+let searchHints = document.querySelector('.searchHints');
+
+let namesList = [];
+
+let list = document.querySelector('.list');
+ 
+
+
+async function fetchingData() {
+
+    let fetchResponse = await fetch(URL);
+
+    namesList = await fetchResponse.json();
+
+    console.log(namesList);
+
+}
+
+fetchingData();
+
+function displayHints() {
+
+    searchHints.innerHTML='';
+
+    let userSearchInput = document.querySelector('.userSearchInput').value.toLowerCase();
+
+    //userSearchInput.toLowerCase();
+
+    console.log(userSearchInput);
+
+    for (let i in namesList) {  
+
+       let nam= namesList[i].name.toLowerCase();
+
+        if (nam.includes(userSearchInput)) {
+
+            searchHints.innerHTML+=`
+
+                 <li class="list">${namesList[i].name}</li>`;
+
+         //console.log(namesList[i].name);
+
+ 
+        }
+
+        if(userSearchInput==''){
+
+            searchHints.innerHTML='';
+
+        }
+ 
+    }
+
+}
+
+
+<input type="text" class="userSearchInput" oninput="displayHints()">
+
+    <ul class="searchHints">
+
+    </ul>
+
+    <script src="searchbar.js"></script>
+ 
+var submit=document.querySelector(".submit");
+    var show=document.querySelector(".show");
+    var url="http://localhost:3000/userDetails";
+    var userContacts=document.querySelector('.userContacts');
+    var ID='';
+    var data='';
+    var firstName;
+    var lastName;
+    var contactNumber;
+    var email;
+    submit.addEventListener('click',submitData);
+    async function submitData()
+     {
+     firstName=document.querySelector(".firstName").value;
+     lastName=document.querySelector(".lastName").value;
+     contactNumber=document.querySelector(".contactNumber").value;
+     email=document.querySelector(".email").value;
+   
+    var Response= await fetch(url,
+    {
+        method:'POST',
+        headers:{
+         'Content-Type':'application/json'
+                },
+         body:JSON.stringify({FirstName:firstName,LastName:lastName,PhoneNumber:contactNumber,Email:email})
+    });
+    var outPut = await Response.json();
+    }
+
+
+   
+    show.addEventListener('click',tableData);
+    async function tableData(){
+       
+        var userDetails='';
+       var Response= await fetch(url);
+       var tableDetails=await Response.json();
+
+
+          for(let i=0;i< tableDetails.length;i++){
+            userDetails+=`<tr>
+                           <td>${i+1}</td>
+                            <td>${tableDetails[i].FirstName}</td>
+                            <td>${tableDetails[i].LastName}</td>
+                            <td>${tableDetails[i].PhoneNumber}</td>
+                            <td>${tableDetails[i].Email}</td>
+                            
+                            <td><button onclick="edit_btn(${tableDetails[i].id})">EDIT</button></td>
+                            <td><button onclick="delete_btn(${tableDetails[i].id})">DELETE</button></td>
+                            </tr>`;   
+          
+        }
+        userContacts.innerHTML=userDetails;
+        document.querySelector(".firstName").value='';
+        document.querySelector(".lastName").value='';
+        document.querySelector(".contactNumber").value='';
+        document.querySelector(".email").value='';
+        }
+
+
+async function delete_btn(id){
+   var Response= await fetch(url+"/"+id,
+    {
+        method:'DELETE',
+        headers:{
+         'Content-Type':'application/json'
+        }          
+    });
+    var outPut = await Response.json();
+    tableData();
+    console.log(outPut);
+    }
+    
+    // getting data
+    async function edit_btn(id){
+         var Response= await fetch(url+"/"+id );
+         ID=id;
+        data= await Response.json();
+        document.querySelector(".firstName").value=data.FirstName;
+        document.querySelector(".lastName").value=data.LastName;
+        document.querySelector(".contactNumber").value=data.PhoneNumber;
+        document.querySelector(".email").value=data.Email;
+        console.log(data);
+        submit.removeEventListener('click',submitData);
+        submit.addEventListener('click',edit_data);
+        
+    }
+
+
+    async function edit_data(){
+     console.log(data);
+        var Response= await fetch(url+'/'+ID,
+            {
+                method:'PUT',
+                headers:{
+                 'Content-Type':'application/json'
+                        },
+                body:JSON.stringify({'FirstName':  document.querySelector(".firstName").value,
+                                     'LastName':  document.querySelector(".lastName").value,
+                                     'PhoneNumber':document.querySelector(".contactNumber").value,
+                                     'Email':document.querySelector(".email").value})
+                
+            });
+           console.log(Response);
+           var output= await Response.json();
+           console.log(ID);
+           console.log(output);
+           tableData();      
+           submit.removeEventListener('click',edit_data);
+           submit.addEventListener('click',submitData);
+    }
+
+[15-10-2022 12:23] Lavanya Yeturi
+package Samanya;import java.util.Scanner;public class AtmMain {public static Scanner sc = new Scanner(System.in);public static int choice;public static boolean flag = false;static String i;static String j;public static void main(String[] args) {String[][] validation = { { "21911026", "sam" }, { "21911018", "lav" } };System.out.println("Account Number :");i = sc.next();System.out.println("Password:");j = sc.next();for (int row = 0; row < validation.length; row++) {for (int column = 0; column < validation[row].length; column++) {if (validation[row][0].equals(i) && validation[row][1].equals(j)) {flag = true;}}}if (flag) {System.out.println(" ");System.out.print("Welcome " + i);System.out.println(" ");System.out.println("Type 1 for Balance Checking");System.out.println("Type 2 for Deposit");System.out.println("Type 3 for Withdrawl");System.out.println("Type 4 for Logout");System.out.println("Type 5 for Exit");System.out.println("  ");System.out.println("Enter Your Choice : ");} else {System.out.print("Invalid username or password");}choice = sc.nextInt();switch (choice) {case 1:CheckBalance();break;case 2:Deposit();case 3:Withdrawl();case 4:Logout();case 5:Exit();}}public static void CheckBalance() {System.out.println("0.00");}public static void Deposit() {System.out.println("Your Deposits are Coming Soon");}public static void Withdrawl() {System.out.println("Coming Soon");}public static void Logout() {System.out.println("Logout Succesfull");}public static void Exit() {System.out.println("Exit");}
+TraderWagon: Cryptocurrency Social Trading Platform
+TraderWagon (TW) is a social trading platform that bridges the gap between expert and novice traders, allowing you to discover, follow and copy trades made by expert traders from all over the world.
+ 
+[15-10-2022 12:24] Lavanya Yeturi
+package Samanya;
+
+import java.util.Scanner;
+
+public class AtmMain {
+
+	public static Scanner sc = new Scanner(System.in);
+
+	public static int choice;
+
+	public static boolean flag = false;
+
+	static String i;
+
+	static String j;
+
+	public static void main(String[] args) {
+
+		String[][] validation = { { "21911026", "sam" }, { "21911018", "lav" } };
+
+		System.out.println("Account Number :");
+
+		i = sc.next();
+
+		System.out.println("Password:");
+
+		j = sc.next();
+
+		for (int row = 0; row < validation.length; row++) {
+
+			for (int column = 0; column < validation[row].length; column++) {
+
+				if (validation[row][0].equals(i) && validation[row][1].equals(j)) {
+
+					flag = true;
+
+				}
+
+			}
+
+		}
+
+		if (flag) {
+
+			System.out.println(" ");
+
+			System.out.print("Welcome " + i);
+
+			System.out.println(" ");
+
+			System.out.println("Type 1 for Balance Checking");
+
+			System.out.println("Type 2 for Deposit");
+
+			System.out.println("Type 3 for Withdrawl");
+
+			System.out.println("Type 4 for Logout");
+
+			System.out.println("Type 5 for Exit");
+
+			System.out.println("  ");
+
+			System.out.println("Enter Your Choice : ");
+
+		} else {
+
+			System.out.print("Invalid username or password");
+
+		}
+
+		choice = sc.nextInt();
+
+		switch (choice) {
+
+		case 1:
+
+			CheckBalance();
+
+			break;
+
+		case 2:
+
+			Deposit();
+
+		case 3:
+
+			Withdrawl();
+
+		case 4:
+
+			Logout();
+
+		case 5:
+
+			Exit();
+
+		}
+
+	}
+
+	public static void CheckBalance() {
+
+		System.out.println("0.00");
+
+	}
+
+	public static void Deposit() {
+
+		System.out.println("Your Deposits are Coming Soon");
+
+	}
+
+	public static void Withdrawl() {
+
+		System.out.println("Coming Soon");
+
+	}
+
+	public static void Logout() {
+
+		System.out.println("Logout Succesfull");
+
+	}
+
+	public static void Exit() {
+
+		System.out.println("Exit");
+
+	}
+
+}
+TraderWagon: Cryptocurrency Social Trading Platform
+TraderWagon (TW) is a social trading platform that bridges the gap between expert and novice traders, allowing you to discover, follow and copy trades made by expert traders from all over the world.
+ 
+[15-10-2022 17:49] Lavanya Yeturi
+package tasks;
+import java.util.Scanner;
+public class atm {
+
+    public static Scanner sc = new Scanner(System.in);
+
+    public static int choice;
+
+    public static boolean flag = false;
+
+    static String i;
+
+    static String j;
+    public static void main(String[] args) {
+
+        String[][] validation = { { "21911026", "sam" }, { "21911018", "lav" } ,{"21911012","str"}};
+
+        System.out.println("*****WELCOME TO FEUJI ATM SERVICES*****");
+
+        System.out.println("----------please login to your account-------");
+        System.out.println("Please Enter Your Account Number :");
+
+        i = sc.next();
+
+        System.out.println("Enter Your Password:");
+
+        j = sc.next();
+        for (int row = 0; row < validation.length; row++) {
+
+            for (int column = 0; column < validation[row].length; column++) {
+
+                if (validation[row][0].equals(i) && validation[row][1].equals(j)) {
+
+                    flag = true;
+
+                }
+
+            }
+
+        }
+
+        do {
+
+            if (flag) {
+
+                System.out.println(" ");
+                System.out.print("Welcome To Your Account:" + i);
+
+                System.out.println(" ");
+
+                System.out.println("Type 1 for Balance Checking");
+
+                System.out.println("Type 2 for Deposit");
+
+                System.out.println("Type 3 for Withdrawl");
+
+                System.out.println("Type 4 for Logout");
+
+                System.out.println("Type 5 for Exit");
+
+                System.out.println("  ");
+
+                System.out.println("Enter Your Choice : ");
+
+            } else {
+
+                System.out.print("Invalid account number or password");
+            }
+
+            choice = sc.nextInt();
+
+            switch (choice) {
+
+            case 1:
+
+                CheckBalance();
+
+                break;
+
+            case 2:
+
+                Deposit();
+
+                break;
+
+            case 3:
+
+                Withdrawl();
+
+                break;
+
+            case 4:
+
+                Logout();
+
+                break;
+
+            case 5:
+
+                Exit();
+
+            }
+
+        } while (choice < 5);
+
+    }
+    public static void CheckBalance() {
+
+        System.out.println("0.00");
+
+    }
+    public static void Deposit() {
+
+        System.out.println("Your Deposits are Coming Soon");
+    }
+    public static void Withdrawl() {
+
+        System.out.println("Coming Soon");
+    }
+    public static void Logout() {
+
+        System.out.println("Logout Succesfull");
+
+    }
+    public static void Exit() {
+
+        System.out.println("YOU HAVE BEEN EXITED SUCCESSFULLY");
+
+    }
+
+}
+ 
+[18-10-2022 18:42] Lavanya Yeturi
+package tasks;
+import java.util.*;
+
+import java.util.Scanner;
+public class atm {
+
+    public static Scanner sc = new Scanner(System.in);
+
+    public static int choice;
+
+    public static boolean flag = false;
+
+    static String i;
+
+    static String j;
+
+    static int row;
+
+    static int column;
+
+    static String[][] storedData = { { "21911026", "sam" }, { "21911018", "lav" }, { "21911012", "str" } };
+    public static void loginAccDetails() {
+
+        System.out.println("");
+
+        System.out.println("*****WELCOME TO FEUJI ATM SERVICES*****");
+        System.out.println("----------please login to your account-------");
+        System.out.println("Please Enter Your Account Number :");
+
+        i = sc.next();
+
+        System.out.println("Please Enter Your Account password :");
+
+        j = sc.next();
+
+        validation(i, j);
+
+    }
+
+    public static void validation( String i, String j) {
+        for (int row = 0; row < storedData.length; row++) {
+
+            for (int column = 0; column < storedData[row].length; column++) {
+
+                if (storedData[row][0].equals(i) && storedData[row][1].equals(j))
+
+                {
+
+                    flag = true;
+
+                    System.out.println("successfully you have been logged in to your account");
+
+                }
+
+            }
+
+        }
+
+        do {
+            if (flag) {
+
+                System.out.println(" ");
+                System.out.print("Welcome To Your Account:" + i);
+
+                System.out.println(" ");
+
+                System.out.println("Type 1 for Balance Checking");
+
+                System.out.println("Type 2 for Deposit");
+
+                System.out.println("Type 3 for Withdrawl");
+
+                System.out.println("Type 4 for Logout");
+
+                System.out.println("Type 5 for Exit");
+
+                System.out.println("  ");
+
+                System.out.println("Enter Your Choice : ");
+
+            } else {
+
+                System.out.print("Invalid account number or password");
+                loginAccDetails();
+            }
+            choice = sc.nextInt();
+
+            switch (choice) {
+
+            case 1:
+
+                CheckBalance();
+
+                break;
+
+            case 2:
+
+                Deposit();
+
+                break;
+
+            case 3:
+
+                Withdrawl();
+
+                break;
+
+            case 4:
+
+                Logout();
+
+                break;
+
+            case 5:
+
+                Exit();
+
+            }
+
+        } while (choice < 4);
+    }
+    public static void main(String[] args) {
+        loginAccDetails();
+
+    }
+    public static void CheckBalance() {
+
+        System.out.println("0.00");
+
+    }
+    public static void Deposit() {
+
+        System.out.println("Your Deposits are Coming Soon");
+    }
+    public static void Withdrawl() {
+
+        System.out.println("WITHDRAWLS ARE NOT YET STARTED");
+    }
+    public static void Logout() {
+
+        System.out.println("Logout Succesfull");
+
+        flag = false;
+
+        loginAccDetails();
+
+    }
+    public static void Exit() {
+
+        System.out.println("YOU HAVE BEEN EXITED SUCCESSFULLY");
+    }
+
+}
+ 
+    
+                            

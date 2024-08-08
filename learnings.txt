@@ -1,0 +1,43 @@
+manual testing (
+UI,
+smoke, 
+regression,
+UAT,
+API(bff,redemption,datafeed),
+postgresql,
+Lambda testing(multiple browsers+ ios & browser/android + multiple versions + multiple devices  and desktop resolutions)
+).  
+          
+Tools(
+playwright,
+postgresql,
+Postman,
+Swagger,
+webdriver.io,
+lambda,
+ 
+Automation(
+UI in playwright (smoke)
+API in webdriver.io
+)
+
+frameworks(
+pom,
+cucumber,
+mocha,
+)
+
+assertions(
+chai,
+playwright default,
+)
+
+reports(
+html,
+allure,
+multiple-cucmber-html-reporte-0\
+)
+
+
+
+
