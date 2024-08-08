@@ -1,0 +1,162 @@
+{
+  "details": [
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 1
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 2
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 3
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 4
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 5
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 6
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 7
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 8
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 9
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 10
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 11
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 12
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 13
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 14
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 15
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 16
+    },
+    {
+      "image": "../Icons/digital-marketing.png",
+      "countImage": "Icons/01.png",
+      "service_name": "UX Design",
+      "designs": "mobile app ,web design",
+      "description": "Lorem ipsum dolor sit amet,consec tetur adipiscing elit.Accumsan sed faucibus augue.Cras ut.",
+      "status": "Active",
+      "id": 17
+    },
+    {
+      "name": "sravani",
+      "gender": "female",
+      "id": 18
+    }
+  ]
+}
